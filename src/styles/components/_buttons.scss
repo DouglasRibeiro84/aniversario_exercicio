@@ -1,0 +1,23 @@
+.button{
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+
+    &--primary{
+        color: white;
+        background-color: black;
+        border: 1px solid black;
+
+        &:hover{
+            color: black;
+            background-color: transparent;
+        }
+    }
+
+    @media (max-width: 640px) {
+        display: block;
+        width: 100%;
+    }
+}

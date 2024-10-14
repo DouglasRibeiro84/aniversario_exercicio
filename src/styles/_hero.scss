@@ -1,0 +1,58 @@
+.hero {
+    padding: 5.6vw;
+    min-height: 80vh;
+    background-image: url(../images/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    .container {
+        position: relative;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+
+        @media (min-width: 640px) and (max-width: 1024px){
+            height: 30vh;
+        }
+    }
+
+    &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.582);
+        content: '';
+    }
+
+    &__text {
+        margin-bottom: 120px;
+        font-size: 40px;
+        line-height: 56px;
+        font-weight: bold;
+        color: white;
+    }
+
+    @media (max-width: 640px) {
+        min-height: 20vh;
+        padding: 5.6vw;
+        background-image: url(/src/images/hero_mobile.jpg);
+
+        &__text {
+            margin-top: 24px;
+            padding: 0px 40px;
+            font-size: 20px;
+            line-height: 20px;
+        }
+
+    }
+
+    @media (min-width: 640px) and (max-width: 1024px) {
+        min-height: 40vh;
+        padding: 5.6vw;
+    }
+}
