@@ -1,6 +1,7 @@
 @use 'hero';
 @use 'components/infos_bar';
 @use 'components/buttons';
+@use 'sobre';
 
 *{
     margin: 0;
@@ -22,4 +23,12 @@
     @media (max-width: 1024px) {
         max-width: 90%;
     }
+}
+
+.final{
+    font-family: "Send Flowers", serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 10px;
+    color: rgb(255, 0, 0);
 }

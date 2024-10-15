@@ -8,15 +8,15 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&family=Send+Flowers&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&family=Send+Flowers&display=swap"rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="styles/main.scss">
 </head>
 
 <body>
     <header class="hero">
         <div class="container">
-            <P class="hero__text">Aniversário da cabeção começa em 10d 12h 1m 10s</P>
+            <P class="hero__text">Aniversário da cabeção começa em <span id="contador"></span></P>
             <div class="infos-bar">
                 <ul class="infos-bar__infos">
                     <li class="infos-bar__infos__item">
@@ -34,12 +34,50 @@
             </div>
         </div>
     </header>
-    <section>
-        <div class="container">
-            <div></div>
+    <section class="sobre">
+        <div class="container" data-aos="fade-right" data-aos-duration="2000">
+            <div class="sobre__text">
+                <h2 class="sobre__text__title">Sobre</h2>
+                <p class="sobre__text__item">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores nam consequuntur sunt veniam quis
+                    modi totam accusantium repudiandae, aspernatur, doloribus cumque aliquam enim harum! Atque eligendi
+                    dolore vero? Ducimus, quas?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore maiores sed at obcaecati consequatur
+                    consequuntur dicta expedita nobis vel voluptas ducimus dolores, dolor, hic rerum! Maiores magnam
+                    laborum ipsa perferendis?
+                </p>
+            </div>
+            <img class="sobre__img" src="/src/images/carousel_1.jpg" alt="">
         </div>
     </section>
-
+    <section class="sobre sobre--segundo sobre--left">
+        <div class="container" data-aos="fade-left" data-aos-duration="2000">
+            <div class="sobre__text">
+                <h2 class="sobre__text__title">Sobre</h2>
+                <p class="sobre__text__item">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores nam consequuntur sunt veniam quis
+                    modi totam accusantium repudiandae, aspernatur, doloribus cumque aliquam enim harum! Atque eligendi
+                    dolore vero? Ducimus, quas?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore maiores sed at obcaecati consequatur
+                    consequuntur dicta expedita nobis vel voluptas ducimus dolores, dolor, hic rerum! Maiores magnam
+                    laborum ipsa perferendis?
+                </p>
+            </div>
+            <img class="sobre__img" src="/src/images/carousel_4.jpg" alt="">
+        </div>
+    </section>
+    <section class="sobre sobre--tercerio">
+        <div class="container" data-aos="fade-right" data-aos-duration="2000">
+            <div class="sobre__text">
+                <h2 class="sobre__text__title">Ultimo topico</h2>
+                <p class="sobre__text__item">
+                    Olá, sla se vai ler essa parte cabeção kk espero que sim, sei que essa pagina ta longe doq consigo fazer, estou meio sem motivação no momento tentei fazer um carousel ja bugou tudo um caraio msmo, me sinto meio desligado de tudo mas saiba que sempre vou te amar, ao lado coloquei umas das musicas que mais curto (se não aparecer só recarregar a pagina kkk), mas só pra confirma de novo <span class="final">T e AMO DMS</span>
+                </p>
+            </div>
+            <iframe class="sobre__img" src="https://www.youtube.com/embed/XEEasR7hVhA?si=olzwQP_jNF3GpDEs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script type="module" src="/src/scripts/main.js"></script>
 </body>
 

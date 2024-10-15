@@ -1,3 +1,5 @@
+@use '../variables';
+
 .button{
     padding: 12px;
     font-size: 18px;
@@ -6,12 +8,12 @@
     text-align: center;
 
     &--primary{
-        color: white;
-        background-color: black;
-        border: 1px solid black;
+        color: variables.$text_secondary;
+        background-color: variables.$text;
+        border: 1px solid variables.$text;
 
         &:hover{
-            color: black;
+            color: variables.$text;
             background-color: transparent;
         }
     }
